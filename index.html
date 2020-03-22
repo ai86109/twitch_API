@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twitch_API</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <div class="top-img">
+            <img src='https://images.unsplash.com/photo-1581913524557-128eedd5871a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60' />
+        </div>
+        <div class="title">
+            <img src="./img/twitch.png">
+            <h1>中文短影音排行榜</h1>
+            <div class="line"></div>
+            <form class="select">
+                <div class="select__all custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="all custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadioInline1">全部</label>
+                </div>
+                <div class="select__lol custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="lol custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">英雄聯盟</label>
+                </div>
+                <div class="select__animal custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="animal custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline3">動物森友會</label>
+                </div>
+            </form>
+        </div>
+        <div class="app">
+            <div class="card-group">
+            </div>
+        </div>
+    </body>
+</html>
