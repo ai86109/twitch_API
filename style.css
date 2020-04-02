@@ -1,3 +1,9 @@
+.wrap{
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
 .top-img img{
     width: 100%;
     height: 600px;
@@ -7,20 +13,23 @@
 .title{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 500px;
-    height: 300px;
-    margin: 0 auto;
     position: absolute;
-    top: 20%;
-    left: 32%;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .title img{
     width: 50%;
+    max-width: 300px;
     height: 30%;
+    max-height: 150px;
     align-self: center;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .title h1{
@@ -30,10 +39,12 @@
     font-weight: bold;
     background-color: #6441a5;
     opacity: 80%;
+    padding: 0 30px;
 }
 
 .title .line{
-    width: 500px;
+    width: 100%;
+    max-width: 400px;
     border: 2px solid #6441a5;
     height: 1px;
     margin: 20px;
@@ -53,6 +64,84 @@
     background-color: #6441a5;
     opacity: 70%;
     padding: 0 10px;
+}
+
+@media(max-width: 414px){
+    .select{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .select label{
+        margin-bottom: 5px;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .title .line{
+        width: 100%;
+        max-width: 350px;
+        border: 2px solid #6441a5;
+        height: 1px;
+        margin: 20px;
+    }
+    .top-img img{
+        width: 100%;
+        height: 450px;
+        position: relative;
+    }
+}
+
+@media(max-width: 370px){
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .title h1{
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        background-color: #6441a5;
+        opacity: 80%;
+        padding: 0 20px;
+    }
+    .title .line{
+        width: 100%;
+        max-width: 300px;
+        border: 2px solid #6441a5;
+        height: 1px;
+        margin: 10px;
+    }
+    .select label{
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        align-self: stretch;
+        background-color: #6441a5;
+        opacity: 70%;
+        padding: 0 10px;
+    }
+    .top-img img{
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
 }
 
 .card-group{
@@ -121,4 +210,50 @@ h2{
     color: tomato;
     right: 15px;
     bottom: 10px;
+}
+
+@media(max-width: 575px){
+    .card-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-list{
+        width: 300px;
+        height: 280px;
+        background-color: antiquewhite;
+        position: relative;
+        display: flex;
+        align-content: center;
+        margin: 20px;
+    }
+    .card-list_text {
+        position: absolute;
+        left: 25%;
+        bottom: 10%;
+    }
+}
+
+@media(max-width: 370px){
+    .card-list{
+        width: 280px;
+        height: 250px;
+        background-color: antiquewhite;
+        position: relative;
+        display: flex;
+        align-content: center;
+        margin: 20px;
+    }
+    .card-list_text {
+        position: absolute;
+        left: 27%;
+        bottom: 5%;
+    }
+    .card-list__views{
+        position: absolute;
+        color: tomato;
+        right: 15px;
+        bottom: 10px;
+        font-size: 12px;
+    }
 }
